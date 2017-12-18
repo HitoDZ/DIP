@@ -1,0 +1,190 @@
+body, html {
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color:black;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.menu-overlay__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  width: 250px; /* Ширина блока */
+  height: 150px; /* Высота блока */
+  position: absolute; /* Абсолютное позиционирование блока */
+  margin-top: -75px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+  margin-left: -125px;
+}
+
+
+.menu-overlay__menu a, .menu-overlay__menu a:link {
+  color: #e8effc;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  opacity: 0;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+.menu-overlay__menu a:nth-child(1), .menu-overlay__menu a:link:nth-child(1) {
+  -webkit-transition: opacity 0.3s ease-in-out 0.3s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.3s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.3s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.3s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(2), .menu-overlay__menu a:link:nth-child(2) {
+  -webkit-transition: opacity 0.3s ease-in-out 0.6s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.6s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.6s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.6s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(3), .menu-overlay__menu a:link:nth-child(3) {
+  -webkit-transition: opacity 0.3s ease-in-out 0.9s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.9s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.9s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 0.9s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(4), .menu-overlay__menu a:link:nth-child(4) {
+  -webkit-transition: opacity 0.3s ease-in-out 1.2s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.2s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.2s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.2s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(5), .menu-overlay__menu a:link:nth-child(5) {
+  -webkit-transition: opacity 0.3s ease-in-out 1.5s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.5s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.5s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.5s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(6), .menu-overlay__menu a:link:nth-child(6) {
+  -webkit-transition: opacity 0.3s ease-in-out 1.8s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.8s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.8s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 1.8s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(7), .menu-overlay__menu a:link:nth-child(7) {
+  -webkit-transition: opacity 0.3s ease-in-out 2.1s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.1s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.1s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.1s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(8), .menu-overlay__menu a:link:nth-child(8) {
+  -webkit-transition: opacity 0.3s ease-in-out 2.4s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.4s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.4s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.4s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay__menu a:nth-child(9), .menu-overlay__menu a:link:nth-child(9) {
+  -webkit-transition: opacity 0.3s ease-in-out 2.7s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.7s, -webkit-transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.7s, transform 0.1s linear;
+  transition: opacity 0.3s ease-in-out 2.7s, transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+.menu-overlay.active .menu-overlay__menu a, .menu-overlay.active .menu-overlay__menu a:link {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.menu-overlay svg {
+  background: url('https://wallpaperscraft.ru/image/zakat_oblaka_zdaniya_neboskreby_tayvan_taybey_gorod_puteshestviya_58366_1920x1080.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#menu {
+  position: fixed;
+  z-index: 500;
+  top: 7px;
+  right: 10px;
+  background: transparent;
+  padding: 8px 12px;
+  color: white;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+polygon {
+  opacity: 0;
+  mix-blend-mode: multiply;
+}
+.menu-overlay.active polygon {
+  opacity: 0.7;
+}
+
+#top-triangle {
+  fill: #808080;
+  -webkit-transition: all .2s linear 0s;
+  transition: all .2s linear 0s;
+}
+
+#top-triangle:hover {
+  opacity: 0.5;
+}
+
+#right-triangle {
+  fill: #000000;
+  -webkit-transition: all .2s linear .2s;
+  transition: all .2s linear .2s;
+}
+
+#right-triangle:hover {
+  opacity: 0.3;
+}
+
+
+#bottom-triangle {
+  fill: #808080;
+  -webkit-transition: all .2s linear .4s;
+  transition: all .2s linear .4s;
+}
+
+
+#bottom-triangle:hover {
+  opacity: 0.5;
+}
+
+#left-triangle {
+  fill:#000000;
+  -webkit-transition: all .6s linear .6s;
+  transition: all .6s linear .6s;
+}
+
+
+#left-triangle:hover {
+  opacity: 0.3;
+}
